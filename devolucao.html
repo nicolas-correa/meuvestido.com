@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devolução - MeuVestido.Com</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.getElementById("clickableDiv").addEventListener("click", function () {
+                window.location.href = "index.html";
+            });
+        });
+    </script>
+    <style>
+        #clickableDiv { cursor: pointer; }
+        .return-container { max-width: 800px; margin: 20px auto; padding: 20px; }
+        .return-form { margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="clickableDiv" class="logo">MeuVestido.Com</div>
+        <div class="header-buttons">
+            <a href="login.html"><button>ENTRAR</button></a>
+            <a href="carrinho.html" class="cart-icon">
+                <img src="cesta.png" alt="Carrinho">
+            </a>
+        </div>
+    </header>
+
+    <main class="return-container">
+        <h1>Política de Devolução</h1>
+        <p>Você tem até 24 horas após a entrega para solicitar a devolução. Vestidos devem estar em perfeito estado.</p>
+        
+        <div class="return-form">
+            <h2>Solicitar Devolução</h2>
+            <form>
+                <label>Número do Pedido</label>
+                <input type="text">
+                
+                <label>Motivo</label>
+                <select>
+                    <option>Tamanho incorreto</option>
+                    <option>Defeito no produto</option>
+                    <option>Arrependimento</option>
+                </select>
+                
+                <button type="submit" class="confirm">SOLICITAR DEVOLUÇÃO</button>
+            </form>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2025 MeuVestido.Com - Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MeuVestido.Com</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="logo.png" type="image/png">
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.getElementById("clickableDiv").addEventListener("click", function () {
+                window.location.href = "index.html";
+            });
+        });
+    </script>
+
+    <style>
+        #clickableDiv {
+            cursor: pointer;
+            /* Garante que o cursor mostre que a div é clicável */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="clickableDiv" class="logo">MeuVestido.Com</div>
+
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar...">
+        </div>
+
+        <div class="header-buttons">
+            <button onclick="window.location.href='ajuda.html'">AJUDA</button>
+            <button onclick="window.location.href='login.html'">ENTRAR</button>
+
+            <!-- Cesta de compras clicável -->
+            <a href="carrinho.html" class="cart-icon">
+                <img src="cesta.png" alt="Carrinho">
+            </a>
+        </div>
+    </header>
+
+    <section class="highlight">
+        <img src="../Nova pasta/imagens/banner.png" alt="Casal de noivos">
+        <div class="highlight-text">
+            <p>Descubra os modelos perfeitos para os dias mais quentes! Tecidos leves, cortes fluídos e detalhes em
+                renda que unem conforto e sofisticação. Alugue seu vestido e arrase no seu grande dia com o frescor do
+                verão</p>
+            <button href="#" class="botao-seguir">seguir >></button>
+        </div>
+    </section>
+
+    <section class="top-designers">
+        <section class="top-designers">
+            <h2>TOP DESIGNERS</h2>
+            <div class="designer-gallery">
+                <!-- Cada imagem agora é um link que passa o id para a página de produto -->
+                <div class="image-container">
+                    <a href="produto.html?id=1">
+                        <img src="../Nova pasta/imagens/inicial1.png" alt="Modelo 1">
+                        <div class="text">Vestido 1</div>
+                    </a>
+                </div>
+                <div class="image-container">
+                    <a href="produto.html?id=2">
+                        <img src="inicial2.png" alt="Modelo 2">
+                        <div class="text">Vestido 2</div>
+                    </a>
+                </div>
+                <div class="image-container">
+                    <a href="produto.html?id=3">
+                        <img src="inicial3.png" alt="Modelo 3">
+                        <div class="text">Vestido 3</div>
+                    </a>
+                </div>
+                <div class="image-container">
+                    <a href="produto.html?id=4">
+                        <img src="inicial4.png" alt="Modelo 4">
+                        <div class="text">Vestido 4</div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <footer class="site-footer">
+        <p>&copy; 2025 MeuVestido.Com - Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
